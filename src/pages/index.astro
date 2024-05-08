@@ -1,0 +1,41 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>👋🏼 Hello!</h1>
+			<p>
+				Welcome to my blog!
+			</p>
+			<p>
+				This blog was created using <a href="https://github.com/withastro/astro">Astro</a>.
+			</p>
+			<p>
+				To learn more about Astro, you can <a href="https://docs.astro.build/"
+					>read the docs
+				</a> or <a href="https://astro.build/chat">join their Discord</a> to ask questions.
+			</p>
+			<!-- <p>Other things I used for this blog:</p>
+			<ul>
+				<li></li>
+			</ul> -->
+			<!-- <p>Latest posts:</p> -->
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+	main {
+		height: 60vh;
+	}
+</style>
